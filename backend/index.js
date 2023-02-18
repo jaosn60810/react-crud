@@ -15,6 +15,8 @@ const db = mysql.createConnection({
   database: process.env.DB_DATABASE,
 });
 
+const port = process.env.PORT || 5500;
+
 app.get('/', (req, res) => {
   res.json('hello');
 });
